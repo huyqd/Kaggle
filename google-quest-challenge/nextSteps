@@ -1,0 +1,7 @@
+- get it running on every machine - N
+- investigate NLP features
+
+- create submission notebook/script - H
+- a script which trains and stores a model
+- a script to extract the features - N/H
+--https://www.kaggle.com/c/google-quest-challenge/overview/description
