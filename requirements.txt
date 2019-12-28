@@ -1,0 +1,7 @@
+kaggle
+pandas
+seaborn
+matplotlib
+pathlib
+numpy
+scipy
