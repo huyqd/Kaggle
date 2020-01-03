@@ -46,11 +46,11 @@ def submit(competition, fname='submit.csv', message=None):
     if not fname.exists():
         raise ValueError('Please save the output in "submit.csv" or point to a valid submit file.')
 
-    os.system(f'"kaggle competitions submit -c {competition} -f {str(fname)} -m "{message}"')
+    os.system(f'kaggle competitions submit -c {competition} -f {str(fname)} -m "{message}"')
 
     return
 
 
 if __name__ == '__main__':
     setup_api_locally()
-    load('google-quest-challenge')
+    submit('google-quest-challenge')
