@@ -23,9 +23,6 @@ def load(competition):
 
     # Upzip download
     fname = folder / f"{competition}.zip"
-    while not fname.exists():
-        print("Waiting for file to be downloaded...")
-        sleep(5)
 
     print("Extracting file...")
     with zipfile.ZipFile(fname, 'r') as zip_ref:
@@ -55,4 +52,4 @@ def submit(competition, fname='submit.csv', message=None):
 
 if __name__ == '__main__':
     setup_api_locally()
-    submit('google-quest-challenge')
+    load('google-quest-challenge')
