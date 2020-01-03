@@ -1,7 +1,6 @@
-- get it running on every machine - N
 - investigate NLP features
+H/N
 
-- create submission notebook/script - H
 - a script which trains and stores a model
 - a script to extract the features - N/H
 --https://www.kaggle.com/c/google-quest-challenge/overview/description
@@ -20,3 +19,11 @@ https://stanfordnlp.github.io/CoreNLP/sentiment.html
 Explore
 
 https://data.stackexchange.com/stackoverflow/query/edit/1173571
+
+
+Investigate grouping of target variables for different models
+--> Huy
+
+Automatize competition submission
+--> Niko
+
