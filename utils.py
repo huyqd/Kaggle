@@ -8,6 +8,7 @@ from datetime import datetime
 root_path = Path(__file__).parent
 
 
+
 def setup_api_locally():
     parser = configparser.ConfigParser()
     parser.read(root_path / 'KAGGLE_CONFIG.ini')

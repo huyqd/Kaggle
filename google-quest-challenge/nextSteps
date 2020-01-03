@@ -5,3 +5,18 @@
 - a script which trains and stores a model
 - a script to extract the features - N/H
 --https://www.kaggle.com/c/google-quest-challenge/overview/description
+
+Implement new features
+
+- Search both question and answer for tags of the tag list and compare fit
+https://stackoverflow.com/questions/33335492/list-of-all-tags-used-in-stackoverflow
+
+- BERT to extract keywords from both question and answer and then evaluate the fit
+https://github.com/huggingface/transformers
+
+- StanfordCoreNLP for sentiment analysis on both question and answer
+https://stanfordnlp.github.io/CoreNLP/sentiment.html
+
+Explore
+
+https://data.stackexchange.com/stackoverflow/query/edit/1173571
