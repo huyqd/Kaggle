@@ -73,13 +73,20 @@ def get_competition_data_path(competition=None):
     test_path = [f for f in all_files if 'test' in str(f)]
     sample_submission_path = [f for f in all_files if 'submission' in str(f)]
 
-    assert all([train_path, test_path, sample_submission_path])
 
     X_train_path = competition_data_path / 'X_train.csv'
     X_test_path = competition_data_path / 'X_test.csv'
     y_train_path = competition_data_path / 'y_train.csv'
+    y_test_path = competition_data_path / 'y_test.csv'
 
-    return train_path[0], test_path[0], sample_submission_path[0], X_train_path, y_train_path, X_test_path
+    return dict(competition_path=competition_data_path,
+                train_path=train_path[0] if train_path else None,
+                test_path=test_path[0] if test_path else None,
+                sample_submission_path=sample_submission_path[0] if sample_submission_path else None,
+                X_train_path=X_train_path,
+                y_train_path=y_train_path,
+                X_test_path=X_test_path,
+                y_test_path=y_test_path)
 
 
 def print_caller_info():
