@@ -11,3 +11,7 @@ gen
 # data
 */data/*
 /data/
+
+KAGGLE_CONFIG.ini
+
+__pycache__
